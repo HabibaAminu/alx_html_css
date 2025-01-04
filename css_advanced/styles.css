@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100vw;
+  
+  font-family: source-san-pro, Spin-Circle-OT;
+}
+.background-image {
+  background-image: url("./images/Object.png");
+}
+header {
+  padding: 20px 40px;
+  
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size:1rem;
+}
+.hero-content  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  
+  
+}
+.hero-content span {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 110px;
+  font-weight: bolder;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+.span-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.button {
+  color: white;
+  background-color: rgba(194, 113, 255, 1);
+  border-radius: 100px;
+  padding: 12px;
+  font-size: 10px;
+  border: none;
+  text-align: center;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.div-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-content, h2 {
+padding: 60px;
+color: #f1f1f1;
+}
+span {
+  color: rgba(194, 113, 255, 1);
+}
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.image-div > div {
+  margin: 20px 40px 0px 10px ;
+  padding-bottom: 0px;
+}
+.image-div > br {
+  text-align: center;
+}
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(194, 113, 255, 1);
+}
+.content {
+  display: flex;
+  padding: 50px;
+  margin: 40px;
+}
+.section-div1 {
+  margin-left: 40px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+.heading2 {
+  text-align: center;
+}
+.third-section > div {
+  text-align: center;
+  columns: #000;
+}
+.heading3 {
+  color: #010101;
+}
+.section-div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.section-div2, h3 {
+  padding: 7px;
+
+}
+.section-div2 > div {
+  margin: 20px;
+  border-radius: 5px;
+}
+.second-div2, p {
+  color: grey;
+}
+.phillip{
+  display: flex;
+}
+.phillip, h4 {
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px;
+  color: rgba(194, 113, 255, 1);
+}
+.icon {
+  display: flex;
+}
+.icon > div {
+  margin-left: 10px;
+  color: rgba(194, 113, 255, 1);
+  width: 15px;
+}
+.paragraph {
+  margin-left: 55px;
+  color: rgba(194, 113, 255, 1);
+}
+.forth-section {
+  background-color: rgba(7, 22, 41, 1);
+  color: #FFFFFF;
+}
+.smiley {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 70px 0px;
+}
+.smiley p, h2 {
+  color: #FFFFFF;
+}
+.smiley > div {
+  margin: 30px;
+
+}
+.forth-section, button {
+   text-align: center;
+  margin-bottom: 50px;
+  padding: auto; 
+}
