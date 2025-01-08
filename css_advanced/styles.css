@@ -65,6 +65,9 @@ h1 {
   justify-content: center;
   
 }
+.btn {
+  padding-bottom: 90px;
+}
 .button {
   color: white;
   background-color: rgba(194, 113, 255, 1);
@@ -79,9 +82,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 0px 40px 20px;
 }
 .div-content h2 {
-padding: 60px;
+padding-top: px;
 color: #f1f1f1;
 }
 span {
@@ -94,10 +98,14 @@ span {
 }
 .image-div > div {
   margin: 20px 40px 0px 10px ;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
+  padding-top: 70px;
 }
 .image-div > br {
   text-align: center;
+}
+.image-div h3 {
+  color: #FFFFFF;
 }
 .second-section {
   display: flex;
@@ -115,32 +123,40 @@ span {
   margin-top: 30px;
   color: #FFFFFF;
 }
+.section-div1 p {
+  color: #FFFFFF;
+}
 .heading2 {
   text-align: center;
 }
-.third-section > div {
+/* .third-section > div {
   text-align: center;
-  columns: #000;
+  columns: #000; 
+}*/
+.third-section h2 {
+  text-align: center;
+  margin: 40px 40px 20px 40px;
 }
 .heading3 {
-  color: #010101;
+  color: grey;
+  font-size: 20px;
 }
 .section-div2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 .section-div2, h3 {
   padding: 7px;
 
 }
 .section-div2 > div {
-  margin: 20px;
+  margin: 10px;
   border-radius: 5px;
 }
 .second-div2, p {
   color: grey;
+  text-align: left;
 }
 .phillip{
   display: flex;
@@ -173,8 +189,16 @@ span {
   justify-content: center;
   margin: 0px 0px 70px 0px;
 }
+.imgcolor {
+  filter: hue-rotate(70deg);
+}
 .smiley p, h2 {
   color: #FFFFFF;
+}
+.smiley-h2 {
+  text-align: center;
+  margin: 40px 40px 20px 40px;
+  padding: 70px;
 }
 .smiley > div {
   margin: 30px;
@@ -209,7 +233,36 @@ footer {
   background-color: rgba(7, 22, 41, 1);
 
 }
-.footer-div {
+.footer {
+  background-color: #041d33; /* Dark navy color */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cccccc;
+  text-align: center;
+}
+
+/*.footer-div {
   display: flex;
   justify-content: center;
   align-items: center;
