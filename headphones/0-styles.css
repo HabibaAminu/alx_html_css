@@ -102,17 +102,19 @@ a:hover {
     padding: 0;
     font-family: sourceSansPro;
   }
+  
   /* Hide the navigation menu by default */
   .nav-menu {
     display: none;
     flex-direction: column;
     background-color: inherit;
     position: absolute;
-    top: 60px;
+    top: 80px;
     right: 0;
     width: 100%;
     padding: 10px;
     z-index: 1000;
+    font-weight: bolder;
   }
 
   /* Show the navigation menu when the checkbox is checked */
@@ -131,6 +133,8 @@ a:hover {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
   /* Hamburger line styles */
