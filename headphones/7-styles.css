@@ -12,8 +12,9 @@
 body {
   height: 100%;
   width: 100%;
-  
 }
+
+
 .background-image {
   min-height: 100vh;
   background-image: url("./assets/background.png"); 
@@ -85,7 +86,7 @@ a:hover {
   border-radius: 20px;
   border: none;
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);;
-  padding: 10px;
+  padding: 7px;
   margin-top: 25px;
   margin-bottom: 100px;
   font-size: 15px;
@@ -108,10 +109,10 @@ a:hover {
 
 .holberton-school-icons {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; 
-  gap: 20px;
-  padding: 20px; 
+  justify-content: space-around; /* Distribute features evenly */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Add spacing between features */
+  padding: 20px; /* Add padding around the container */
 }
 
 .feature {
@@ -139,8 +140,20 @@ p {
   font-size: 15px; 
   line-height: 1.5; 
 }
+.feature:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.feature:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.feature:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.feature:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
-/*styling for third frame*/
+
 .background-image3 {
   min-height: 100vh;
   background-image: url("./assets/background2.png"); 
@@ -158,89 +171,101 @@ p {
  /* margin: 10px 0;*/
   color: #FFFFFF;
 }
-.dot-container {
+/*styling pentagon */
+.pentagon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  padding-top: 100px;
-}
-.dot-container > .dot-feature img {
-  margin: 30px;
+  gap: 60px; 
+  padding-top: 10%;
 }
 
+/*Shape */
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background-color: #ff6b6b; /* Light red color */
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-@media screen and (max-width: 768px) {
-  /* Hide the navigation menu by default */
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background-color: inherit;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 10px;
-    z-index: 1000;
-  }
+/* Content Inside Pentagon */
+.pentagon .content {
+  text-align: center;
+  color: #ffffff;
+}
 
-  /* Show the navigation menu when the checkbox is checked */
-  .menu-toggle:checked ~ .navbar {
-    display: flex;
-    align-items: center;
-  }
+.pentagon h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  li {
-    display: block; margin: 10px;
-    background-color: inherit;
-  }
-  /* Show the hamburger icon */
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    margin-top: 10px;
-    margin-right: 20px;
-  }
+.pentagon p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+}
 
-  /* Hamburger line styles */
-  .hamburger .lines {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    transition: all 0.3s ease;
-  }
+/* Hover Effect */
+.pentagon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 
-  /* Transform hamburger into an "X" when active */
-  .menu-toggle:checked + .hamburger .lines:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 6px;
-  }
 
-  .menu-toggle:checked + .hamburger .lines:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
-  }
+.pentagon:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.pentagon:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.pentagon:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.pentagon:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
-  .menu-toggle:checked + .hamburger .lines:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -6px;
-  }
-  .dot-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: 40px;
-  }
+/* Content Inside Pentagon */
+.pentagon .content {
+  text-align: center;
+  color: #ffffff;
+}
 
-  .our-result p {
-    margin-top: 100px;
-    text-align: center;
-    line-height: 1.5;
-   /* margin: 10px 0;*/
-    color: #FFFFFF;
+.pentagon h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pentagon p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Hover Effect */
+.pentagon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Keyframes for Sliding and Bouncing Animation */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(100px); /* Start off-screen */
+  }
+  80% {
+      opacity: 1;
+      transform: translateY(-10px); /* Slight overshoot */
+  }
+  100% {
+      transform: translateY(0); /* Settle into place */
   }
 }
